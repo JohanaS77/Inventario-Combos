@@ -2,7 +2,7 @@
 
 ---
 
-## <img width="105" height="61" alt="Descripción" src="img/descripcion.png"/>
+## <img width="455" height="401" alt="Descripción" src="img/descripcion.png"/>
 
 Este proyecto consiste en un sistema de gestión de inventario desarrollado en Java que permite administrar productos perecederos y crear combos promocionales con descuentos personalizados. El sistema calcula automáticamente el precio de los combos sumando el costo por kilogramo de cada producto incluido y aplicando el descuento correspondiente.
 
@@ -11,7 +11,7 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 ---
 
 <a name="indice"></a>
-## <img width="105" height="61" alt="Indice" src="img/indice.png"/>
+## <img width="155" height="101" alt="Indice" src="img/indice.png"/>
 
 1. [Objetivos](#objetivos)
 2. [Tecnologías Utilizadas](#tecnologías-utilizadas)
@@ -23,13 +23,17 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 8. [Reportes de Cobertura](#reportes-de-cobertura)
 9. [Plan de Pruebas](#plan-de-pruebas)
 10. [Evidencias](#evidencias)
-11. [Desarrolladores](#desarrolladores)
-12. [Conclusiones](#conclusiones)
+11. [Conclusiones](#conclusiones)
+12. [Recomendaciones](#recomendaciones)
+13. [Desarrolladores](#desarrolladores)
+14. [Licencia](#licencia)
+15. [Contacto](#contacto)
+
 
 ---
 
 <a name="objetivos"></a>
-## <img width="105" height="61" alt="Objetivos" src="img/objetivos.png"/>
+## <img width="205" height="111" alt="Objetivos" src="img/objetivos.png"/>
 
 - Aplicar técnicas de pruebas unitarias en un proyecto Java
 - Implementar pruebas que cubran al menos el 90% de la lógica de negocio
@@ -39,7 +43,7 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 ---
 
 <a name="tecnologías-utilizadas"></a>
-## <img width="105" height="61" alt="Tecnologias Usadas" src="img/tecnologias.png"/>
+## <img width="405" height="401" alt="Tecnologias Usadas" src="img/tecnologias.png"/>
 
 - **Lenguaje:** Java 17
 - **Framework de Pruebas:** JUnit 5
@@ -51,7 +55,7 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 ---
 
 <a name="requisitos-técnicos"></a>
-## <img width="105" height="61" alt="Requisitos Tecnicos" src="img/requisitos.png"/>
+## <img width="405" height="401" alt="Requisitos Tecnicos" src="img/requisitos.png"/>
 
 - Java Development Kit (JDK) 17 o superior
 - Maven 3.6 o superior
@@ -61,7 +65,7 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 ---
 
 <a name="instalación"></a>
-## <img width="105" height="61" alt="Instalacion" src="img/instalacion.png"/>
+## <img width="225" height="251" alt="Instalacion" src="img/instalacion.png"/>
 
 ### 1. Clonar el repositorio
 
@@ -92,7 +96,7 @@ mvn exec:java -Dexec.mainClass="sistemagestioncombos.VentanaPrincipal"
 ---
 
 <a name="estructura-del-proyecto"></a>
-## <img width="105" height="61" alt="Estructura" src="img/estructura.png"/>
+## <img width="425" height="421" alt="Estructura" src="img/estructura.png"/>
 
 ```
 ## Estructura del Proyecto
@@ -132,7 +136,7 @@ sistemagestioncombos/
 ---
 
 <a name="funcionalidades"></a>
-## <img width="105" height="61" alt="funcionalidades" src="img/funcionalidades.png"/>
+## <img width="315" height="311" alt="Funcionalidades" src="img/funcionalidades.png"/>
 
 ### Gestión de Productos
 - **Agregar productos:** Registro de nuevos productos con todos sus atributos (nombre, precio, tipo, temporada, días para vencer, cantidad en kg)
@@ -159,7 +163,10 @@ sistemagestioncombos/
 - **Precio final de combo:** Precio original × (1 - descuento/100)
 - **Valor total del inventario:** Suma de todos los productos individuales y el valor de todos los combos (precio final × unidades)
 
-## Ejecución de Pruebas
+---
+
+<a name="ejecución-de-pruebas"></a>
+## <img width="405" height="401" alt="Ejecucion de pruebas" src="img/ejecucion.png"/>
 
 ### Ejecutar todas las pruebas
 
@@ -190,7 +197,8 @@ mvn test -Dtest=ProductoTest
 
 ---
 
-## Reportes de Cobertura
+<a name="reportes-de-cobertura"></a>
+## <img width="415" height="411" alt="Reportes cobertura" src="img/reportes.png"/>
 
 Según el análisis de JaCoCo, el proyecto alcanza los siguientes niveles de cobertura:
 
@@ -213,7 +221,8 @@ Según el análisis de JaCoCo, el proyecto alcanza los siguientes niveles de cob
 
 ---
 
-## Plan de Pruebas
+<a name="plan-de-pruebas"></a>
+## <img width="315" height="311" alt="Plan pruebas" src="img/plan.png"/>
 
 ### Estrategia de Pruebas
 
@@ -315,7 +324,8 @@ El proyecto implementa una estrategia de pruebas exhaustiva que incluye:
 
 ---
 
-## Evidencias
+<a name="evidencias"></a>
+## <img width="255" height="251" alt="Evidencias" src="img/evidencias.png"/>
 
 ### Evidencias de Funcionamiento de la Aplicación
 
@@ -344,7 +354,6 @@ Vista de la tabla de combos con productos asociados, descuentos y precios calcul
 
 ![Lista de Combos](evidencias/ventanap3.png)
 
----
 
 ### Evidencias de Pruebas Unitarias
 
@@ -368,7 +377,6 @@ Ejecución exitosa de todas las clases de prueba implementadas:
 #### ProductoTest
 ![Pruebas Producto](evidencias/ProductoTest.png)
 
----
 
 ### Reporte de Cobertura JaCoCo
 
@@ -380,7 +388,8 @@ Reporte completo de cobertura de código mostrando 98% de cobertura en instrucci
 
 ---
 
-## Conclusiones
+<a name="conclusiones"></a>
+## <img width="285" height="281" alt="Conclusiones" src="img/conclusiones.png"/>
 
 ### Logros Alcanzados
 
@@ -414,7 +423,8 @@ El uso de herramientas profesionales como JUnit, JaCoCo y Maven nos preparó par
 
 ---
 
-## Recomendaciones para Futuras Mejoras
+<a name="recomendaciones"></a>
+## <img width="355" height="351" alt="Recomendaciones" src="img/recomendaciones.png"/> 
 
 1. **Base de Datos:** Migrar de archivos de texto a una base de datos relacional (MySQL, PostgreSQL) para mayor robustez
 2. **Pruebas de GUI:** Implementar pruebas automatizadas de la interfaz gráfica usando frameworks como AssertJ Swing
@@ -430,7 +440,7 @@ El uso de herramientas profesionales como JUnit, JaCoCo y Maven nos preparó par
 ---
 
 <a name="desarrolladores"></a>
-## <img width="377" height="62" alt="Captura de pantalla 2025-08-14 111853" src="readme-img/desarrolladores.png"/>
+## <img width="355" height="351" alt="Desarrolladores" src="img/desarrolladores.png"/> 
 
 Este proyecto fue desarrollado por Dafne Julieth Cortés, Johana Jazmín Saavedra y Michael Duvan Gómez Peña, estudiantes de cuarto semestre en Técnica profesional en programación de aplicaciones de software de la Fundación Universitaria Compensar; con una participación activa en la creación del juego y presentación del proyecto final.
 
@@ -438,15 +448,15 @@ Este proyecto fue desarrollado por Dafne Julieth Cortés, Johana Jazmín Saavedr
   <table>
     <tr>
       <td align="center" style="padding: 0 30px;">
-        <img src="readme-img/Dafne.jpg" width="120" style="border: none;"><br/>
+        <img src="img/Dafne.jpg" width="120" style="border: none;"><br/>
         <strong>Dafne Julieth Cortés</strong>
       </td>
       <td align="center" style="padding: 0 30px;">
-        <img src="readme-img/johana.png" width="80" style="border: none;"><br/>
+        <img src="img/johana.png" width="80" style="border: none;"><br/>
         <strong>Johana Jazmín Saavedra</strong>
       </td>
       <td align="center" style="padding: 0 30px;">
-        <img src="readme-img/Michael.png" width="120" style="border: none;"><br/>
+        <img src="img/Michael.png" width="120" style="border: none;"><br/>
         <strong>Michael Duvan Gómez Peña</strong>
       </td>
     </tr>
@@ -457,13 +467,15 @@ Este proyecto fue desarrollado por Dafne Julieth Cortés, Johana Jazmín Saavedr
 
 ---
 
-## Licencia
+<a name="licencia"></a>
+## <img width="385" height="381" alt="Licencia" src="img/licencia.png"/> 
 
 Este proyecto fue desarrollado con fines académicos para el curso de Pruebas de Software.
 
 ---
 
-## Contacto
+<a name="ontacto"></a>
+## <img width="385" height="381" alt="Contacto" src="img/contacto.png"/> 
 
 Para cualquier consulta sobre el proyecto, puede contactar a través del repositorio de GitHub.
 
