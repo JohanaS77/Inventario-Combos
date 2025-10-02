@@ -1,4 +1,4 @@
-# <div align="center"><img src="img/titulo.png" alt="Titulo" width="600"></div> 
+# <img width="132" height="133" alt="Frutas" src="img/frutas.png"/><div align="center"><img src="img/titulo.png" alt="Titulo" width="600"><img width="132" height="133" alt="Verduras" src="img/verduras.png"/></div> 
 
 ---
 
@@ -29,7 +29,6 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 14. [Licencia](#licencia)
 15. [Contacto](#contacto)
 
-
 ---
 
 <a name="objetivos"></a>
@@ -39,6 +38,8 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 - Implementar pruebas que cubran al menos el 90% de la lógica de negocio
 - Generar y analizar informes de cobertura de código
 - Diseñar un plan de pruebas completo que valide la funcionalidad del sistema
+
+[🔼 Volver al índice](#índice)
 
 ---
 
@@ -52,6 +53,8 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 - **IDE:** IntelliJ IDEA 
 - **Interfaz Gráfica:** Java Swing
 
+[🔼 Volver al índice](#índice)
+
 ---
 
 <a name="requisitos-técnicos"></a>
@@ -61,6 +64,8 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 - Maven 3.6 o superior
 - IntelliJ IDEA (Community o Ultimate Edition)
 - Git instalado en el sistema
+
+[🔼 Volver al índice](#índice)
 
 ---
 
@@ -92,6 +97,8 @@ mvn exec:java -Dexec.mainClass="sistemagestioncombos.VentanaPrincipal"
 2. Seleccionar el archivo `pom.xml` del proyecto
 3. IntelliJ detectará automáticamente que es un proyecto Maven
 4. Ejecutar la clase `VentanaPrincipal.java` ubicada en `src/main/java/sistemagestioncombos/`
+
+[🔼 Volver al índice](#índice)
 
 ---
 
@@ -133,6 +140,8 @@ sistemagestioncombos/
 └── README.md                                  # Este archivo
 ```
 
+[🔼 Volver al índice](#índice)
+
 ---
 
 <a name="funcionalidades"></a>
@@ -162,6 +171,8 @@ sistemagestioncombos/
 - **Precio original de combo:** Suma del precio por kg de cada producto incluido en el combo (sin considerar la cantidad total en inventario)
 - **Precio final de combo:** Precio original × (1 - descuento/100)
 - **Valor total del inventario:** Suma de todos los productos individuales y el valor de todos los combos (precio final × unidades)
+
+[🔼 Volver al índice](#índice)
 
 ---
 
@@ -195,6 +206,8 @@ Abre este archivo en tu navegador para ver el reporte detallado con cobertura po
 mvn test -Dtest=ProductoTest
 ```
 
+[🔼 Volver al índice](#índice)
+
 ---
 
 <a name="reportes-de-cobertura"></a>
@@ -218,6 +231,8 @@ Según el análisis de JaCoCo, el proyecto alcanza los siguientes niveles de cob
 - **Cumplimiento del Objetivo:** Se supera ampliamente el requisito de 90% de cobertura establecido en la Etapa 2
 - **Clases con Cobertura Perfecta:** Producto (100%/100%) y GestorCombos (100%/100%) alcanzan cobertura completa
 - **Áreas de Mejora:** Las clases de persistencia (ArchivoCombo y ArchivoProducto) tienen 95% de cobertura, principalmente debido a casos excepcionales de manejo de archivos que son difíciles de simular en pruebas unitarias
+
+[🔼 Volver al índice](#índice)
 
 ---
 
@@ -322,6 +337,8 @@ El proyecto implementa una estrategia de pruebas exhaustiva que incluye:
    - Manejo de archivos inexistentes
    - Recuperación de datos consistente
 
+[🔼 Volver al índice](#índice)
+
 ---
 
 <a name="evidencias"></a>
@@ -386,6 +403,8 @@ Reporte completo de cobertura de código mostrando 98% de cobertura en instrucci
 
 *El reporte detallado en formato HTML se encuentra en `target/site/jacoco/index.html` después de ejecutar `mvn clean test jacoco:report`*
 
+[🔼 Volver al índice](#índice)
+
 ---
 
 <a name="conclusiones"></a>
@@ -421,6 +440,8 @@ Este proyecto nos permitió comprender la importancia de las pruebas de software
 
 El uso de herramientas profesionales como JUnit, JaCoCo y Maven nos preparó para enfrentar proyectos reales en la industria del software. Además, el proceso de documentación nos enseñó la importancia de comunicar claramente el funcionamiento y las capacidades de un sistema.
 
+[🔼 Volver al índice](#índice)
+
 ---
 
 <a name="recomendaciones"></a>
@@ -436,6 +457,8 @@ El uso de herramientas profesionales como JUnit, JaCoCo y Maven nos preparó par
 8. **Historial de Cambios:** Mantener un registro de modificaciones para auditoría
 9. **Notificaciones:** Alertas automáticas para productos próximos a vencer
 10. **Internacionalización:** Soporte para múltiples idiomas
+
+[🔼 Volver al índice](#índice)
 
 ---
 
@@ -472,12 +495,16 @@ Este proyecto fue desarrollado por Dafne Julieth Cortés, Johana Jazmín Saavedr
 
 Este proyecto fue desarrollado con fines académicos para el curso de Pruebas de Software.
 
+[🔼 Volver al índice](#índice)
+
 ---
 
 <a name="ontacto"></a>
 ## <img width="385" height="381" alt="Contacto" src="img/contacto.png"/> 
 
 Para cualquier consulta sobre el proyecto, puede contactar a través del repositorio de GitHub.
+
+[🔼 Volver al índice](#índice)
 
 ---
 
