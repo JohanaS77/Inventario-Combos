@@ -1,7 +1,7 @@
 <div align="center">
-  <img width="192" height="193" alt="Frutas" src="img/frutas.png" style="display: inline-block; vertical-align: middle;"/>
+  <img width="172" height="173" alt="Frutas" src="img/frutas.png" style="display: inline-block; vertical-align: middle;"/>
   <img src="img/titulo.png" alt="Titulo" width="600" style="display: inline-block; vertical-align: middle;"/>
-  <img width="192" height="193" alt="Verduras" src="img/verduras.png" style="display: inline-block; vertical-align: middle;"/>
+  <img width="172" height="173" alt="Verduras" src="img/verduras.png" style="display: inline-block; vertical-align: middle;"/>
 </div>
 
 ---
