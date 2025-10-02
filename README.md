@@ -1,4 +1,8 @@
-# <img width="132" height="133" alt="Frutas" src="img/frutas.png"/><div align="center"><img src="img/titulo.png" alt="Titulo" width="600"><img width="132" height="133" alt="Verduras" src="img/verduras.png"/></div> 
+<div align="center">
+  <img width="192" height="193" alt="Frutas" src="img/frutas.png" style="display: inline-block; vertical-align: middle;"/>
+  <img src="img/titulo.png" alt="Titulo" width="600" style="display: inline-block; vertical-align: middle;"/>
+  <img width="192" height="193" alt="Verduras" src="img/verduras.png" style="display: inline-block; vertical-align: middle;"/>
+</div>
 
 ---
 
@@ -14,12 +18,12 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 ## <img width="155" height="101" alt="Indice" src="img/indice.png"/>
 
 1. [Objetivos](#objetivos)
-2. [Tecnologías Utilizadas](#tecnologías-utilizadas)
-3. [Requisitos Técnicos](#requisitos-técnicos)
-4. [Instalación](#instalación)
+2. [Tecnologías Utilizadas](#tecnologias-utilizadas)
+3. [Requisitos Técnicos](#requisitos-tecnicos)
+4. [Instalación](#instalacion)
 5. [Estructura del Proyecto](#estructura-del-proyecto)
 6. [Funcionalidades](#funcionalidades)
-7. [Ejecución de Pruebas](#ejecución-de-pruebas)
+7. [Ejecución de Pruebas](#ejecucion-de-pruebas)
 8. [Reportes de Cobertura](#reportes-de-cobertura)
 9. [Plan de Pruebas](#plan-de-pruebas)
 10. [Evidencias](#evidencias)
@@ -39,11 +43,11 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 - Generar y analizar informes de cobertura de código
 - Diseñar un plan de pruebas completo que valide la funcionalidad del sistema
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
-<a name="tecnologías-utilizadas"></a>
+<a name="tecnologias-utilizadas"></a>
 ## <img width="405" height="401" alt="Tecnologias Usadas" src="img/tecnologias.png"/>
 
 - **Lenguaje:** Java 17
@@ -53,11 +57,11 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 - **IDE:** IntelliJ IDEA 
 - **Interfaz Gráfica:** Java Swing
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
-<a name="requisitos-técnicos"></a>
+<a name="requisitos-tecnicos"></a>
 ## <img width="405" height="401" alt="Requisitos Tecnicos" src="img/requisitos.png"/>
 
 - Java Development Kit (JDK) 17 o superior
@@ -65,11 +69,11 @@ Cuenta con una interfaz gráfica desarrollada con Java Swing y persistencia de d
 - IntelliJ IDEA (Community o Ultimate Edition)
 - Git instalado en el sistema
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
-<a name="instalación"></a>
+<a name="instalacion"></a>
 ## <img width="225" height="251" alt="Instalacion" src="img/instalacion.png"/>
 
 ### 1. Clonar el repositorio
@@ -98,15 +102,17 @@ mvn exec:java -Dexec.mainClass="sistemagestioncombos.VentanaPrincipal"
 3. IntelliJ detectará automáticamente que es un proyecto Maven
 4. Ejecutar la clase `VentanaPrincipal.java` ubicada en `src/main/java/sistemagestioncombos/`
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
 <a name="estructura-del-proyecto"></a>
-## <img width="425" height="421" alt="Estructura" src="img/estructura.png"/>
+## <img width="405" height="451" alt="Estructura" src="img/estructura.png"/>
 
 ```
 ## Estructura del Proyecto
+<table><tr><td>
+
 sistemagestioncombos/
 ├── src/
 │   ├── main/
@@ -139,21 +145,22 @@ sistemagestioncombos/
 ├── productos.txt                              # Archivo de datos (generado)
 └── README.md                                  # Este archivo
 ```
+</td></tr></table>
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
 <a name="funcionalidades"></a>
 ## <img width="315" height="311" alt="Funcionalidades" src="img/funcionalidades.png"/>
 
-### Gestión de Productos
+## Gestión de Productos
 - **Agregar productos:** Registro de nuevos productos con todos sus atributos (nombre, precio, tipo, temporada, días para vencer, cantidad en kg)
 - **Modificar productos:** Actualización de cualquier atributo de productos existentes
 - **Eliminar productos:** Eliminación de productos del inventario
 - **Listar productos:** Visualización de todos los productos en formato tabla con cálculo de valor total
 
-### Gestión de Combos
+## Gestión de Combos
 - **Crear combos:** Definición de nuevos combos con nombre, temporada, descuento (%) y unidades disponibles
 - **Agregar productos a combos:** Asociación de múltiples productos a un combo
 - **Modificar combos:** Actualización de temporada, descuento o unidades
@@ -161,37 +168,37 @@ sistemagestioncombos/
 - **Eliminar combos:** Eliminación completa de combos del sistema
 - **Cálculo automático de precios:** El sistema calcula automáticamente el precio original sumando el precio de 1 kg de cada producto que compone el combo, y luego aplica el descuento para obtener el precio final
 
-### Persistencia de Datos
+## Persistencia de Datos
 - **Guardado automático:** Los datos se guardan automáticamente en archivos de texto al realizar cambios
 - **Carga al inicio:** Los datos se cargan automáticamente al iniciar la aplicación
 - **Formato de almacenamiento:** Archivos de texto plano con formato delimitado por punto y coma (;)
 
-### Cálculos y Reportes
+## Cálculos y Reportes
 - **Valor total por producto:** Precio × cantidad en kg
 - **Precio original de combo:** Suma del precio por kg de cada producto incluido en el combo (sin considerar la cantidad total en inventario)
 - **Precio final de combo:** Precio original × (1 - descuento/100)
 - **Valor total del inventario:** Suma de todos los productos individuales y el valor de todos los combos (precio final × unidades)
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
-<a name="ejecución-de-pruebas"></a>
+<a name="ejecucion-de-pruebas"></a>
 ## <img width="405" height="401" alt="Ejecucion de pruebas" src="img/ejecucion.png"/>
 
-### Ejecutar todas las pruebas
+## Ejecutar todas las pruebas
 
 ```bash
 mvn test
 ```
 
-### Ejecutar pruebas con reporte de cobertura
+## Ejecutar pruebas con reporte de cobertura
 
 ```bash
 mvn clean test jacoco:report
 ```
 
-### Ver el reporte de cobertura en el navegador
+## Ver el reporte de cobertura en el navegador
 
 El reporte HTML se genera automáticamente en:
 ```
@@ -200,13 +207,13 @@ target/site/jacoco/index.html
 
 Abre este archivo en tu navegador para ver el reporte detallado con cobertura por clase, método y línea.
 
-### Ejecutar una clase de prueba específica
+## Ejecutar una clase de prueba específica
 
 ```bash
 mvn test -Dtest=ProductoTest
 ```
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
@@ -232,14 +239,14 @@ Según el análisis de JaCoCo, el proyecto alcanza los siguientes niveles de cob
 - **Clases con Cobertura Perfecta:** Producto (100%/100%) y GestorCombos (100%/100%) alcanzan cobertura completa
 - **Áreas de Mejora:** Las clases de persistencia (ArchivoCombo y ArchivoProducto) tienen 95% de cobertura, principalmente debido a casos excepcionales de manejo de archivos que son difíciles de simular en pruebas unitarias
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
 <a name="plan-de-pruebas"></a>
 ## <img width="315" height="311" alt="Plan pruebas" src="img/plan.png"/>
 
-### Estrategia de Pruebas
+## Estrategia de Pruebas
 
 El proyecto implementa una estrategia de pruebas exhaustiva que incluye:
 
@@ -249,7 +256,7 @@ El proyecto implementa una estrategia de pruebas exhaustiva que incluye:
 4. **Pruebas de Integración:** Se verifica la interacción correcta entre clases
 5. **Pruebas de Persistencia:** Se valida el guardado y recuperación de datos
 
-### Casos de Prueba por Módulo
+## Casos de Prueba por Módulo
 
 #### 1. Pruebas de Producto (ProductoTest.java)
 
@@ -320,7 +327,7 @@ El proyecto implementa una estrategia de pruebas exhaustiva que incluye:
 -  Verificación de formato de archivo
 -  Manejo de combos sin productos
 
-### Tipos de Validaciones Implementadas
+## Tipos de Validaciones Implementadas
 
 1. **Validaciones de Entrada:**
    - Campos obligatorios no nulos ni vacíos
@@ -337,80 +344,108 @@ El proyecto implementa una estrategia de pruebas exhaustiva que incluye:
    - Manejo de archivos inexistentes
    - Recuperación de datos consistente
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
 <a name="evidencias"></a>
 ## <img width="255" height="251" alt="Evidencias" src="img/evidencias.png"/>
 
-### Evidencias de Funcionamiento de la Aplicación
+## Evidencias de Funcionamiento de la Aplicación
 
-#### Interfaz de Consola (Main.java)
+### Interfaz de Consola (Main.java)
 Ejecución del sistema a través de la interfaz de consola con menú de opciones:
 
-![Interfaz de Consola](evidencias/main.png)
+<div align="center">
+  <img src="evidencias/main.png" alt="Interfaz de Consola" width="350"/>
+</div>
 
-#### Interfaz Gráfica - Ventana Principal
+### Interfaz Gráfica - Ventana Principal
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="evidencias/ventanap1.png" alt="Menú Principal" width="400"/>
+        <br>
+        <strong>Menú principal del sistema</strong>
+      </td>
+      <td align="center">
+        <img src="evidencias/ventanap4.png" alt="Agregar Producto" width="400"/>
+        <br>
+        <strong>Formulario de captura de datos</strong>
+      </td>
+    </tr>
+  </table>
+</div>
 
-**Menú principal del sistema:**
-
-![Menú Principal](evidencias/ventanap1.png)
-
-**Formulario de captura de datos:**
-
-![Agregar Producto](evidencias/ventanap4.png)
-
-#### Gestión de Inventario de Productos
+### Gestión de Inventario de Productos
 Vista de la tabla de productos con sus características, precios y cantidades:
 
-![Inventario de Productos](evidencias/ventanap2.png)
+<div align="center">
+  <img src="evidencias/ventanap2.png" alt="Inventario de Productos" width="650"/>
+</div>
 
-#### Gestión de Combos
+### Gestión de Combos
 Vista de la tabla de combos con productos asociados, descuentos y precios calculados:
 
-![Lista de Combos](evidencias/ventanap3.png)
+<div align="center">
+  <img src="evidencias/ventanap3.png" alt="Lista de Combos" width="650"/>
+</div>
 
 
-### Evidencias de Pruebas Unitarias
+## Evidencias de Pruebas Unitarias
 
 Ejecución exitosa de todas las clases de prueba implementadas:
 
-#### ArchivoComboTest
-![Pruebas ArchivoCombo](evidencias/ArchivoComboTest.png)
+### ArchivoComboTest
+<div align="center">
+  <img src="evidencias/ArchivoComboTest.png" alt="Pruebas ArchivoCombo" width="420"/>
+</div>
 
-#### ArchivoProductoTest
-![Pruebas ArchivoProducto](evidencias/ArchivoProductoTest.png)
+### ArchivoProductoTest
+<div align="center">
+  <img src="evidencias/ArchivoProductoTest.png" alt="Pruebas ArchivoProducto" width="500"/>
+</div>
 
-#### ComboTest
-![Pruebas Combo](evidencias/ComboTest.png)
+### ComboTest
+<div align="center">
+  <img src="evidencias/ComboTest.png" alt="Pruebas Combo" width="450"/>
+</div>
 
-#### GestorCombosTest
-![Pruebas GestorCombos](evidencias/GestorCombosTest.png)
+### GestorCombosTest
+<div align="center">
+  <img src="evidencias/GestorCombosTest.png" alt="Pruebas GestorCombos" width="450"/>
+</div>
 
-#### InventarioTest
-![Pruebas Inventario](evidencias/InventarioTest.png)
+### InventarioTest
+<div align="center">
+  <img src="evidencias/InventarioTest.png" alt="Pruebas Inventario" width="450"/>
+</div>
 
-#### ProductoTest
-![Pruebas Producto](evidencias/ProductoTest.png)
+### ProductoTest
+<div align="center">
+  <img src="evidencias/ProductoTest.png" alt="Pruebas Producto" width="450"/>
+</div>
 
 
-### Reporte de Cobertura JaCoCo
+## Reporte de Cobertura JaCoCo
 
 Reporte completo de cobertura de código mostrando 98% de cobertura en instrucciones y ramas:
 
-![Reporte de Cobertura JaCoCo](evidencias/JacocoTest.png)
+<div align="center">
+  <img src="evidencias/JacocoTest.png" alt="Reporte de Cobertura JaCoCo" width="800"/>
+</div>
 
 *El reporte detallado en formato HTML se encuentra en `target/site/jacoco/index.html` después de ejecutar `mvn clean test jacoco:report`*
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
 <a name="conclusiones"></a>
 ## <img width="285" height="281" alt="Conclusiones" src="img/conclusiones.png"/>
 
-### Logros Alcanzados
+## Logros Alcanzados
 
 1. **Cumplimiento de Objetivos:** Se desarrolló una aplicación completa y funcional que cumple con todos los requisitos establecidos en la Etapa 2 del proyecto
 2. **Alta Cobertura de Pruebas:** Se alcanzó un 98% de cobertura de código, superando ampliamente el objetivo del 90%
@@ -419,7 +454,7 @@ Reporte completo de cobertura de código mostrando 98% de cobertura en instrucci
 5. **Interfaz Amigable:** Se desarrolló una GUI intuitiva y funcional con paleta de colores organizada
 6. **Documentación Completa:** Se documentó el código, las pruebas y el proceso de desarrollo
 
-### Aprendizajes Obtenidos
+## Aprendizajes Obtenidos
 
 1. **Importancia de las Pruebas:** Las pruebas unitarias son fundamentales para detectar errores tempranamente y garantizar la calidad del software
 2. **Uso de Herramientas:** JUnit y JaCoCo son herramientas esenciales para automatizar pruebas y medir cobertura
@@ -427,20 +462,20 @@ Reporte completo de cobertura de código mostrando 98% de cobertura en instrucci
 4. **Cobertura como Métrica:** La cobertura de código es un buen indicador de calidad, pero debe complementarse con pruebas significativas
 5. **Diseño de Software:** Una buena arquitectura facilita la creación de pruebas y el mantenimiento del código
 
-### Desafíos Enfrentados
+## Desafíos Enfrentados
 
 1. **Persistencia de Relaciones:** Guardar y recuperar las relaciones entre combos y productos requirió un diseño cuidadoso
 2. **Cobertura de Excepciones:** Alcanzar alta cobertura en el manejo de excepciones de I/O fue un reto
 3. **Validaciones Consistentes:** Asegurar que todas las validaciones funcionaran correctamente en diferentes escenarios
 4. **Sincronización de Datos:** Mantener la consistencia entre la interfaz gráfica y los archivos de persistencia
 
-### Reflexión Final
+## Reflexión Final
 
 Este proyecto nos permitió comprender la importancia de las pruebas de software en el ciclo de desarrollo. La implementación de pruebas unitarias exhaustivas no solo nos ayudó a detectar errores tempranamente, sino que también nos dio confianza en la calidad y estabilidad del código. El uso de herramientas profesionales como JUnit, JaCoCo y Maven nos preparó para enfrentar proyectos reales en la industria del software.
 
 El uso de herramientas profesionales como JUnit, JaCoCo y Maven nos preparó para enfrentar proyectos reales en la industria del software. Además, el proceso de documentación nos enseñó la importancia de comunicar claramente el funcionamiento y las capacidades de un sistema.
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
@@ -458,7 +493,7 @@ El uso de herramientas profesionales como JUnit, JaCoCo y Maven nos preparó par
 9. **Notificaciones:** Alertas automáticas para productos próximos a vencer
 10. **Internacionalización:** Soporte para múltiples idiomas
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
@@ -486,28 +521,27 @@ Este proyecto fue desarrollado por Dafne Julieth Cortés, Johana Jazmín Saavedr
   </table>
 </div>
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
 <a name="licencia"></a>
-## <img width="385" height="381" alt="Licencia" src="img/licencia.png"/> 
+## <img width="185" height="181" alt="Licencia" src="img/licencia.png"/> 
 
 Este proyecto fue desarrollado con fines académicos para el curso de Pruebas de Software.
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
-<a name="ontacto"></a>
-## <img width="385" height="381" alt="Contacto" src="img/contacto.png"/> 
+<a name="contacto"></a>
+## <img width="185" height="181" alt="Contacto" src="img/contacto.png"/> 
 
 Para cualquier consulta sobre el proyecto, puede contactar a través del repositorio de GitHub.
 
-[🔼 Volver al índice](#índice)
+[🔼 Volver al índice](#indice)
 
 ---
 
 **Fecha de Última Actualización:** Octubre 2024  
 **Versión:** 1.0.0
-
