@@ -508,14 +508,20 @@ Este proyecto fue desarrollado por Dafne Julieth Cortés, Johana Jazmín Saavedr
       <td align="center" style="padding: 0 30px;">
         <img src="img/Dafne.jpg" width="120" style="border: none;"><br/>
         <strong>Dafne Julieth Cortés</strong>
+        <br>
+        <em>(Desarrollador Backend)</em>
       </td>
       <td align="center" style="padding: 0 30px;">
         <img src="img/johana.png" width="80" style="border: none;"><br/>
         <strong>Johana Jazmín Saavedra</strong>
+        <br>
+        <em>(QA Tester)</em>
       </td>
       <td align="center" style="padding: 0 30px;">
         <img src="img/Michael.png" width="120" style="border: none;"><br/>
         <strong>Michael Duvan Gómez Peña</strong>
+        <br>
+        <em>(Desarrollador Frontend)</em>
       </td>
     </tr>
   </table>
